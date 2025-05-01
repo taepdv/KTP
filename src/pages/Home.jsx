@@ -5,25 +5,23 @@ function Home() {
   const navigate = useNavigate();
   return (
     <Picture>
-      <div className="h-screen w-full bg-[url('')]">
-        <span className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
+      <div className="h-screen w-md bg-[url('')]">
+        <span className="flex justify-between items-center max-w-xl mx-auto border-b-2 border-white">
           <div className="text-2xl">
-            <i className="fa-solid fa-phone-volume p-3"></i>
+            <i className="fa-solid fa-phone-volume p-6 w-0"></i>
             LAO +856 20 91123850
-            <i className="fa-regular fa-envelope p-4"></i>
-            nxyn8786@gmail.com
           </div>
-          <div className="text-2xl">
+          <div className="p-7">
             <i className="fa-brands fa-facebook"></i>
             <i className="fa-brands fa-linkedin p-3"></i>
             <i className="fa-brands fa-google p-3"></i>
             <i className="fa-brands fa-youtube"></i>
           </div>
         </span>
-        <span className=" justify-center text-5xl text-lime-500 flex mt-24">
+        <span className=" justify-center text-2xl text-lime-500 flex mt-24">
           ຂໍເຊີນທຸກທ່ານມາທ່ຽວ ແຂວງ ຫລວງພະບາງ
         </span>
-        <span className="justify-center text-5xl  text-lime-500 flex mt-4">
+        <span className="justify-center text-2xl  text-lime-500 flex mt-4">
           (ຂໍຂອບໃຈ)
         </span>
       </div>
@@ -54,14 +52,21 @@ function Home() {
           alt=""
         />
       </div>
-      <span className="text-4xl flex justify-center bg-emerald-400 p-8 text-cyan-600">
+      <span className="text-2xl flex justify-center bg-emerald-400 p-8 text-cyan-600">
         ເຄັດລັບທີ່ສຳຄັນໃນການເດີນທາງທ່ອງທ່ຽວຫລວງພະບາງ
       </span>
-      <div className="grid grid-cols-2 gap-1 p-3 bg-emerald-400">
+      <div className="grid md:grid-cols-2 gap-1 p-3 bg-emerald-400">
         <div>
-          <span className="text-4xl justify-center flex mt-7 text-white">
+          <span className="text-2xl justify-center flex mt-7 text-white">
             ນໍ້າຕົກຕາດກວາງຊີ
           </span>
+          <div className=" md:hidden">
+          <img
+            className="w-full h-full rounded-md"
+            src="https://huunghivietlao.thoidai.com.vn/stores/news_dataimages/su.vu/102020/19/15/in_article/4850_Tad-Kuangsri-Waterfall.jpg"
+            alt=""
+          />
+        </div>
           <div className="p-4 w-full max-w-4xl mx-auto">
             <p className="text-justify leading-relaxed">
               ຂໍເຊີນນັກທ່ອງທ່ຽວທຸກ ທ່ານມາທ່ຽວຊົນນໍ້າຕົກຕາດກວາງຊີ
@@ -94,7 +99,7 @@ function Home() {
             </p>
           </div>
         </div>
-        <div>
+        <div className="hidden md:flex">
           <img
             className="w-full h-full rounded-md"
             src="https://huunghivietlao.thoidai.com.vn/stores/news_dataimages/su.vu/102020/19/15/in_article/4850_Tad-Kuangsri-Waterfall.jpg"
@@ -102,7 +107,7 @@ function Home() {
           />
         </div>
       </div>
-      <div className="bg-emerald-400 grid grid-cols-2 gap-4 p-3">
+      <div className="bg-emerald-400 grid md:grid-cols-2 gap-4 p-3">
         <img
           className="w-full h-full rounded-md"
           src="https://live.staticflickr.com/4809/45185220315_b1b789de96.jpg"
@@ -125,11 +130,17 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className="bg-emerald-400 grid grid-cols-2 gap-4 p-3">
+      <div className="bg-emerald-400 grid md:grid-cols-2 gap-4 p-3">
         <div>
           <span className="text-4xl justify-center flex mt-4 text-white">
             ວັດຊຽງທອງ
           </span>
+          <div > 
+            <img
+          className="w-full h-full rounded-md"
+          src="https://www.tourismluangprabang.org/wp-content/uploads/2022/07/wat-xieng-thong-16-of-8-2.jpg"
+          alt=""
+        /></div>
           <div className="p-4 w-full max-w-4xl mx-auto">
             <p className="text-justify leading-relaxed">
               ຂໍເຊີນທ່ຽວຊົມວັດທະນະທຳ, ຮີດຄອງປະເພນີ, ແລະ
@@ -151,16 +162,18 @@ function Home() {
             </p>
           </div>
         </div>
+        <div className="hidden md:flex">
         <img
           className="w-full h-full rounded-md"
           src="https://www.tourismluangprabang.org/wp-content/uploads/2022/07/wat-xieng-thong-16-of-8-2.jpg"
           alt=""
         />
+        </div>
       </div>
       <span className="flex justify-center bg-emerald-400 p-6 text-white text-3xl">
         ເຊີນຊົມ ແຂວງຫຼວງພະບາງ
       </span>
-      <div className="bg-emerald-400 p-4 grid grid-cols-4 gap-4">
+      <div className="bg-emerald-400 p-4 grid md:grid-cols-4 gap-4">
         <div>
           <span className="text-2xl flex justify-center">ແຂວງຫລວງພະບາງ</span>
 
