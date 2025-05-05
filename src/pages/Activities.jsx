@@ -2,7 +2,7 @@ function About() {
   return (
     <div>
       <div className="h-screen w-full bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjl5HfI8q6Nkq3Xpvxt_P9TyfK3KaP6pO4Y-hH-6zU6ZBPlmN_51Lq0tWiDtkngiS4rWCYQxgHfHm6bZw5nOUaLSaBFiB7xs3A3txCt235RRuTpKV-BUHFmjVdq7n7D6Ocna9QN6-7jEee/s1600/Screen+Shot+2017-08-02+at+13.24.36.png')]">
-        <span className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
+        <span className="hidden md:flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
           <div className="text-2xl">
             <i className="fa-solid fa-phone-volume p-3"></i>
             LAO +856 20 91123850
@@ -17,12 +17,24 @@ function About() {
           </div>
         </span>
         <div>
-          <h1 className="text-5xl font-bold flex justify-center mt-44 text-white">
+          <span className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
+            <div className="md:hidden">
+              <i className="fa-solid fa-phone-volume p-4"></i>
+              LAO +856 20 91123850
+              <i className="fa-brands fa-facebook p-4"></i>
+              <i className="fa-brands fa-linkedin p-4"></i>
+              <i className="fa-brands fa-google p-4"></i>
+              <i className="fa-brands fa-youtube p-4"></i>
+            </div>
+          </span>
+        </div>
+        <div>
+          <h1 className="text-4xl font-bold flex justify-center mt-44 text-white">
             ຖ້ໍາຕິ່ງ ແຂວງຫລວງພະບາງ
           </h1>
         </div>
       </div>
-      <div className="bg-emerald-400 p-4 grid grid-cols-4 gap-4">
+      <div className="bg-emerald-400 p-4 grid md:grid-cols-4 gap-4">
         <div>
           <img
             className="h-80 w-full object-cover rounded-md"

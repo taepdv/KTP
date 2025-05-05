@@ -5,25 +5,42 @@ function Home() {
   const navigate = useNavigate();
   return (
     <Picture>
-      <div className="h-screen w-md bg-[url('')]">
-        <span className="flex justify-between items-center max-w-xl mx-auto border-b-2 border-white">
+      <div className="h-screen w-full bg-[url('')]">
+        <span className="justify-between items-center max-w-6xl mx-auto border-b-2 border-white hidden md:flex">
           <div className="text-2xl">
-            <i className="fa-solid fa-phone-volume p-6 w-0"></i>
+            <i className="fa-solid fa-phone-volume p-3"></i>
             LAO +856 20 91123850
+            <i className="fa-regular fa-envelope p-4"></i>
+            nxyn8786@gmail.com
           </div>
-          <div className="p-7">
+          <div className="text-2xl">
             <i className="fa-brands fa-facebook"></i>
             <i className="fa-brands fa-linkedin p-3"></i>
             <i className="fa-brands fa-google p-3"></i>
             <i className="fa-brands fa-youtube"></i>
           </div>
         </span>
-        <span className=" justify-center text-2xl text-lime-500 flex mt-24">
-          ຂໍເຊີນທຸກທ່ານມາທ່ຽວ ແຂວງ ຫລວງພະບາງ
-        </span>
-        <span className="justify-center text-2xl  text-lime-500 flex mt-4">
-          (ຂໍຂອບໃຈ)
-        </span>
+        <div className="md:hidden">
+          <div className="">
+            <i className="fa-solid fa-phone-volume p-4"></i>
+            LAO +856 20 91123850
+            <i className="fa-brands fa-facebook p-6"></i>
+            <i className="fa-brands fa-linkedin p-4"></i>
+            <i className="fa-brands fa-google p-4"></i>
+            <i className="fa-brands fa-youtube p-4"></i>
+          </div>
+          <span className="justify-center text-2xl text-lime-500 flex mt-24">
+            ຂໍເຊີນທຸກທ່ານມາທ່ຽວ ແຂວງ ຫລວງພະບາງ
+          </span>
+          <span className="justify-center text-2xl  text-lime-500 flex mt-4">
+            (ຂໍຂອບໃຈ)
+          </span>
+        </div>
+        <div className="hidden md:flex justify-center">
+          <span className="text-5xl text-lime-500 flex mt-24">
+            ຂໍເຊີນທຸກທ່ານມາທ່ຽວ ແຂວງ ຫລວງພະບາງ
+          </span>
+        </div>
       </div>
       <div className="bg-emerald-400 p-8 grid grid-cols-5 gap-4">
         <img
@@ -57,16 +74,16 @@ function Home() {
       </span>
       <div className="grid md:grid-cols-2 gap-1 p-3 bg-emerald-400">
         <div>
-          <span className="text-2xl justify-center flex mt-7 text-white">
+          <span className="text-4xl justify-center flex mt-7 text-white">
             ນໍ້າຕົກຕາດກວາງຊີ
           </span>
-          <div className=" md:hidden">
-          <img
-            className="w-full h-full rounded-md"
-            src="https://huunghivietlao.thoidai.com.vn/stores/news_dataimages/su.vu/102020/19/15/in_article/4850_Tad-Kuangsri-Waterfall.jpg"
-            alt=""
-          />
-        </div>
+          <div className="md:hidden">
+            <img
+              className="w-full h-full rounded-md"
+              src="https://huunghivietlao.thoidai.com.vn/stores/news_dataimages/su.vu/102020/19/15/in_article/4850_Tad-Kuangsri-Waterfall.jpg"
+              alt=""
+            />
+          </div>
           <div className="p-4 w-full max-w-4xl mx-auto">
             <p className="text-justify leading-relaxed">
               ຂໍເຊີນນັກທ່ອງທ່ຽວທຸກ ທ່ານມາທ່ຽວຊົນນໍ້າຕົກຕາດກວາງຊີ
@@ -108,26 +125,37 @@ function Home() {
         </div>
       </div>
       <div className="bg-emerald-400 grid md:grid-cols-2 gap-4 p-3">
-        <img
-          className="w-full h-full rounded-md"
-          src="https://live.staticflickr.com/4809/45185220315_b1b789de96.jpg"
-          alt=""
-        />
-        <div className="p-4 w-full max-w-4xl mx-auto">
-          <p className="text-justify leading-relaxed">
-            <span className="text-4xl justify-center flex mt-4 text-white">
-              ຕະຫຼາດກາງຄືນ
-            </span>
-            ຂໍເຊີນນັກທ່ອງທ່ຽວທຸກທ່ານມາທ່ຽວຊົມ ຕະຫຼາດກາງຄືນ ຂອງແຂວງຫລວງພະບາງ
-            ມາທ່ຽວຊົມສີ້ນຄ້າພື້ນເມືອງ, ຢ່າງເຊັ່ນ: ມີຄວາມໂດດເດັ່ນທາງດ້ານແຜ່ນແພ,
-            ຄວາມຫຼາກຫຼາຍຂອງປະເພດແຜ່ນແພ ທັງຮູບແບບ ແລະ ເຕັກນິກໃນການຕໍ່າແຜ່ນແພ ຫຼື
-            ວ່າມາຊື່ຂອງກິນຫຼາກຫຼາຍນາໆຊະນິດ ຈາກຊາວບ້ານທີ່ນໍາມາຂາຍ ແລະ
-            ໃນຕະຫຼາດຍັງມີສິນຄ້າວັດທະນະທໍາຊາວຫລວງພະບາງຫຼາກຫຼາຍຊະນິດໃຫ້ທ່ານໄດ້ເລືອກຊື່
-            ຫຼື ທ່ຽວຊົມໄດ້ຕາມໃຈ ແລະ ສະຖານທີ່ ຕັ້ງຢູ່ທາງຮ່ອມນ້ອຍໆ
-            ດ້ານຫຼັງຂອງສໍານັກງານທ່ອອງທ່ຽວ, ຂະໜານກັບເສັ້ນທາງແຄມຂອງ,
-            ຕະຫຼາດແຫ່ງນີ້ເປັນສະຖານທີ່
-            ທີ່ທ່ານຈະໄດ້ເຫັນອາຫານການກິນຂອງທ້ອງຖິ່ນທີ່ດີທີ່ສຸດ.
-          </p>
+        <div className="hidden md:flex">
+          <img
+            className="w-full h-full rounded-md"
+            src="https://live.staticflickr.com/4809/45185220315_b1b789de96.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <span className="text-4xl justify-center flex mt-4 text-white">
+            ຕະຫຼາດກາງຄືນ
+          </span>
+          <div className="md:hidden">
+            <img
+              className="w-full h-full rounded-md"
+              src="https://live.staticflickr.com/4809/45185220315_b1b789de96.jpg"
+              alt=""
+            />
+          </div>
+          <div className="p-4 w-full max-w-4xl mx-auto">
+            <p className="text-justify leading-relaxed">
+              ຂໍເຊີນນັກທ່ອງທ່ຽວທຸກທ່ານມາທ່ຽວຊົມ ຕະຫຼາດກາງຄືນ ຂອງແຂວງຫລວງພະບາງ
+              ມາທ່ຽວຊົມສີ້ນຄ້າພື້ນເມືອງ, ຢ່າງເຊັ່ນ: ມີຄວາມໂດດເດັ່ນທາງດ້ານແຜ່ນແພ,
+              ຄວາມຫຼາກຫຼາຍຂອງປະເພດແຜ່ນແພ ທັງຮູບແບບ ແລະ ເຕັກນິກໃນການຕໍ່າແຜ່ນແພ
+              ຫຼື ວ່າມາຊື່ຂອງກິນຫຼາກຫຼາຍນາໆຊະນິດ ຈາກຊາວບ້ານທີ່ນໍາມາຂາຍ ແລະ
+              ໃນຕະຫຼາດຍັງມີສິນຄ້າວັດທະນະທໍາຊາວຫລວງພະບາງຫຼາກຫຼາຍຊະນິດໃຫ້ທ່ານໄດ້ເລືອກຊື່
+              ຫຼື ທ່ຽວຊົມໄດ້ຕາມໃຈ ແລະ ສະຖານທີ່ ຕັ້ງຢູ່ທາງຮ່ອມນ້ອຍໆ
+              ດ້ານຫຼັງຂອງສໍານັກງານທ່ອອງທ່ຽວ, ຂະໜານກັບເສັ້ນທາງແຄມຂອງ,
+              ຕະຫຼາດແຫ່ງນີ້ເປັນສະຖານທີ່
+              ທີ່ທ່ານຈະໄດ້ເຫັນອາຫານການກິນຂອງທ້ອງຖິ່ນທີ່ດີທີ່ສຸດ.
+            </p>
+          </div>
         </div>
       </div>
       <div className="bg-emerald-400 grid md:grid-cols-2 gap-4 p-3">
@@ -135,12 +163,13 @@ function Home() {
           <span className="text-4xl justify-center flex mt-4 text-white">
             ວັດຊຽງທອງ
           </span>
-          <div > 
+          <div className="md:hidden">
             <img
-          className="w-full h-full rounded-md"
-          src="https://www.tourismluangprabang.org/wp-content/uploads/2022/07/wat-xieng-thong-16-of-8-2.jpg"
-          alt=""
-        /></div>
+              className="w-full h-full rounded-md"
+              src="https://www.tourismluangprabang.org/wp-content/uploads/2022/07/wat-xieng-thong-16-of-8-2.jpg"
+              alt=""
+            />
+          </div>
           <div className="p-4 w-full max-w-4xl mx-auto">
             <p className="text-justify leading-relaxed">
               ຂໍເຊີນທ່ຽວຊົມວັດທະນະທຳ, ຮີດຄອງປະເພນີ, ແລະ
@@ -163,11 +192,11 @@ function Home() {
           </div>
         </div>
         <div className="hidden md:flex">
-        <img
-          className="w-full h-full rounded-md"
-          src="https://www.tourismluangprabang.org/wp-content/uploads/2022/07/wat-xieng-thong-16-of-8-2.jpg"
-          alt=""
-        />
+          <img
+            className="w-full h-full rounded-md"
+            src="https://www.tourismluangprabang.org/wp-content/uploads/2022/07/wat-xieng-thong-16-of-8-2.jpg"
+            alt=""
+          />
         </div>
       </div>
       <span className="flex justify-center bg-emerald-400 p-6 text-white text-3xl">
@@ -220,10 +249,10 @@ function Home() {
           />
         </div>
       </div>
-      <span className="text-4xl flex justify-center bg-emerald-400 p-5 text-white">
-        ສິ່ງທີ່ຄວນມີເມື່ອມາທ່ຽວຫລວງພະບາງ
+      <span className="text-2xl flex justify-center bg-emerald-400 p-5 text-white">
+        ສິ່ງທີ່ຄວນມີເພື່ອມາທ່ຽວຫລວງພະບາງ
       </span>
-      <div className="bg-emerald-400 p-4 grid grid-cols-4 gap-4">
+      <div className="bg-emerald-400 p-4 grid md:grid-cols-4 gap-4">
         <img
           className="h-44 w-full object-cover rounded-md"
           src="https://www.ebuylaos.com/uploads/images/202308141749470dd868831.jpg"
@@ -231,7 +260,7 @@ function Home() {
         />
         <img
           className="h-44 w-full object-cover rounded-md"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5IuH7YVLiowx61dx0A0WD6yTRmF8UpJ7Usg&s"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2rOup21roOsDW6O0JRvufvpHQ3mnA5uGHQ&s"
           alt=""
         />
         <img

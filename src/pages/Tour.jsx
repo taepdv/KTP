@@ -1,8 +1,9 @@
 function About() {
   return (
     <div>
-      <div className="h-screen w-full bg-[url('https://blog.bangkokair.com/wp-content/uploads/2024/08/best-things-to-do-in-luang-prabang.jpg')]">
-        <span className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
+      <div className="h-screen w-full bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfAM0Th0Hlx975Sxx6q-kogJgIzMo3kGE6Mk3Ek5Hsh_eKARLClY8O0JH2D7AET5r09_xVeGcK-Rn6bWckqqpUQY91EBHfdFqvKK9eXHNvgiEg5qTIpCuuGemUdsxXB-lCKUAg87oLL3c/s1600/Screen+Shot+2019-01-28+at+16.24.27.png')]">
+      <div className="">
+        <span className="hidden md:flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
           <div className="text-2xl">
             <i className="fa-solid fa-phone-volume p-3"></i>
             LAO +856 20 91123850
@@ -16,13 +17,27 @@ function About() {
             <i className="fa-brands fa-youtube"></i>
           </div>
         </span>
+        </div>
         <div>
-          <h1 className="text-5xl font-bold flex justify-center mt-44 text-white">
-            ວັດວາອາຣາມ ແລະ ຮີດຄອງປະເພນີ
+          <span className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
+            <div className="md:hidden">
+              <i className="fa-solid fa-phone-volume p-4"></i>
+              LAO +856 20 91123850
+              <i className="fa-brands fa-facebook p-4"></i>
+              <i className="fa-brands fa-linkedin p-4"></i>
+              <i className="fa-brands fa-google p-4"></i>
+              <i className="fa-brands fa-youtube p-4"></i>
+            </div>
+          </span>
+        </div>
+        <div>
+          <h1 className="text-4xl font-bold flex justify-center mt-44 text-white">
+            ວັດອາຣາມ ແລະ ຮີດຄອງປະເພນີ
           </h1>
         </div>
       </div>
-      <div className="bg-emerald-400 p-4 grid grid-cols-4 gap-4">
+      
+      <div className="bg-emerald-400 p-4 grid md:grid-cols-4 gap-4">
         <div>
           <img
             className="h-80 w-full object-cover rounded-md"
@@ -103,22 +118,22 @@ function About() {
         </div>
       </div>
       <div className="p-4 w-screen bg-emerald-400">
-        <p className="text-justify leading-relaxed">
-          ວັດທະນະທຳ ແລະ
-          ຮີດຄອງປະເພນີອັນດີງາມຂອງແຂວງຫລວງພະບາງສືບຕໍ່ກັນມາເປັນເວລາດົນນານແຕ່ສະໄຫມກ່ອນຈົນເຖີງປັດຈຸບັນ
-          ແລະ ຫຼວງພະບາງ ມີຄວາມພາກພູມໃຈທີ່ໄດ້ຮັບການສະໜັບສະໜູນໃຫ້ເປັນສະຖານທີ່
-          ທີ່ມີວິຖີຊີວິດແບບດັ້ງເດີມ ແລະ ວັດທະນະທຳ ທີ່ຍັງຄົງຮັກສາຄວາມດັ້ງເດີມໄວ້
-          ເຖິງແມ່ນວ່າເວລາຜ່ານມາດົນນານຫຼາຍຮ້ອຍປີແລ້ວກໍ່ຕາມຫຼືຖ້າຫາກວ່າ
-          ຍ່າງຜ່ານວັດເກົ່າແກ່ບູຮານ ຟັງເທດຟັງທຳ ເຂົ້າຮ່ວມພິທີທາງພຸດທະສາສະໜາ
-          ເຊິ່ງປະຊາຊົນໄດ້ປະຕິບັດມາເປັນເວລາຫລາຍສັດຕະວັດແລ້ວ ແລະ
-          ຖ້າຫາກທ່ານຕ້ອງການເຮັດຈະກໍາຕ່າງໆບໍ່ວ່າຈະເປັນຂີ່ຊ້າງ, ໂອ່ນສະລິງ
-          ຫຼືພາຍເຮືອຄາຢັກ ມີກິດຈະກໍາຫຼາກຫຼາຍທີ່ເຮັດທ່ານເພີດເພີນໄດ້ໃນເມືອງແຫ່ງນີ້
-          ແລະ ຖ້າທ່ານຢູ່ໃນຕະຫຼາດຫັດຖະກໍາຂອງອາຊີຕາເວັນອອກສ່ຽງໃຕ້ແທ້ໆ
-          ຖືວ່າຫາໄດ້ຍາກທີ່ຈະຄິດຫາສະຖານທີ່ດີໆແບບຫຼວງພະບາງ,
-          ມີຄວາມໂດດເດັ່ນທາງດ້ານແຜ່ນແພ, ຄວາມຫຼາກຫຼາຍຂອງປະເພດແຜ່ນແພ ທັງຮູບແບບ
-          ແລະເຕັກນິກໃນການຕໍ່າແຜ່ນແພ ຫຼື ການຕໍ່າຫູກທໍໄໝ, ການຈັກສານ,
-          ເຄື່ອງປັ້ນດິນເຜົາ ສີໄມ້ລາຍມືຂອງຄົນໃນທ້ອງຖິ່ນ
-          ມີຫຼາຍສິ່ງຫຼາຍຢ່າງທີ່ໜ້າຄົ້ນຫາ ຈະເຮັດໃຫ້ທ່ານຫຼົງໄຫຼໃນສີລະປະ.
+      <p className="text-justify leading-relaxed">
+        ວັດທະນະທຳ ແລະ
+        ຮີດຄອງປະເພນີອັນດີງາມຂອງແຂວງຫລວງພະບາງສືບຕໍ່ກັນມາເປັນເວລາດົນນານແຕ່ສະໄຫມກ່ອນຈົນເຖີງປັດຈຸບັນ
+        ແລະ ຫຼວງພະບາງ ມີຄວາມພາກພູມໃຈທີ່ໄດ້ຮັບການສະໜັບສະໜູນໃຫ້ເປັນສະຖານທີ່
+        ທີ່ມີວິຖີຊີວິດແບບດັ້ງເດີມ ແລະ ວັດທະນະທຳ ທີ່ຍັງຄົງຮັກສາຄວາມດັ້ງເດີມໄວ້
+        ເຖິງແມ່ນວ່າເວລາຜ່ານມາດົນນານຫຼາຍຮ້ອຍປີແລ້ວກໍ່ຕາມຫຼືຖ້າຫາກວ່າ
+        ຍ່າງຜ່ານວັດເກົ່າແກ່ບູຮານ ຟັງເທດຟັງທຳ ເຂົ້າຮ່ວມພິທີທາງພຸດທະສາສະໜາ
+        ເຊິ່ງປະຊາຊົນໄດ້ປະຕິບັດມາເປັນເວລາຫລາຍສັດຕະວັດແລ້ວ ແລະ
+        ຖ້າຫາກທ່ານຕ້ອງການເຮັດຈະກໍາຕ່າງໆບໍ່ວ່າຈະເປັນຂີ່ຊ້າງ, ໂອ່ນສະລິງ
+        ຫຼືພາຍເຮືອຄາຢັກ ມີກິດຈະກໍາຫຼາກຫຼາຍທີ່ເຮັດທ່ານເພີດເພີນໄດ້ໃນເມືອງແຫ່ງນີ້
+        ແລະ ຖ້າທ່ານຢູ່ໃນຕະຫຼາດຫັດຖະກໍາຂອງອາຊີຕາເວັນອອກສ່ຽງໃຕ້ແທ້ໆ
+        ຖືວ່າຫາໄດ້ຍາກທີ່ຈະຄິດຫາສະຖານທີ່ດີໆແບບຫຼວງພະບາງ,
+        ມີຄວາມໂດດເດັ່ນທາງດ້ານແຜ່ນແພ, ຄວາມຫຼາກຫຼາຍຂອງປະເພດແຜ່ນແພ ທັງຮູບແບບ
+        ແລະເຕັກນິກໃນການຕໍ່າແຜ່ນແພ ຫຼື ການຕໍ່າຫູກທໍໄໝ, ການຈັກສານ,
+        ເຄື່ອງປັ້ນດິນເຜົາ ສີໄມ້ລາຍມືຂອງຄົນໃນທ້ອງຖິ່ນ
+        ມີຫຼາຍສິ່ງຫຼາຍຢ່າງທີ່ໜ້າຄົ້ນຫາ ຈະເຮັດໃຫ້ທ່ານຫຼົງໄຫຼໃນສີລະປະ.
         </p>
       </div>
     </div>

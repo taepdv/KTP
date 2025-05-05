@@ -2,7 +2,7 @@ function About() {
   return (
     <div>
       <div className="h-screen w-full bg-[url('https://scontent.fvte5-1.fna.fbcdn.net/v/t1.6435-9/67695879_690246438066853_8168821655741661184_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFmq4VVVFzXp_wFMX2Wr2Zft__TQp1Gkwi3_9NCnUaTCA-SkAA69LMws202r1nL9KLsDKWRqe_jh8JyCIQM6Gx-&_nc_ohc=2Zii-Jhc0aYQ7kNvwHvIeVE&_nc_oc=AdlX-CwaEhM8AmRKCQW-K49TGyX3hW0ZAfBZxkEVu5U7pMGo3AAqRxhfy0PQSqdsVhs&_nc_zt=23&_nc_ht=scontent.fvte5-1.fna&_nc_gid=L7H_pwXHe_lAhyH7jr42Rw&oh=00_AfEt9JoerQFStchdAk-AGHUQoI6JeFB9xVwS0tVHKBlHzw&oe=682ED28A')]">
-        <span className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
+        <span className="hidden md:flex justify-between items-center max-w-6xl mx-auto border-b-2 border-b-black">
           <div className="text-2xl">
             <i className="fa-solid fa-phone-volume p-3"></i>
             LAO +856 20 91123850
@@ -17,12 +17,24 @@ function About() {
           </div>
         </span>
         <div>
-          <h1 className="text-5xl font-bold flex justify-center mt-44">
+          <span className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
+            <div className="md:hidden">
+              <i className="fa-solid fa-phone-volume p-4"></i>
+              LAO +856 20 91123850
+              <i className="fa-brands fa-facebook p-4"></i>
+              <i className="fa-brands fa-linkedin p-4"></i>
+              <i className="fa-brands fa-google p-4"></i>
+              <i className="fa-brands fa-youtube p-4"></i>
+            </div>
+          </span>
+        </div>
+        <div>
+          <h1 className="text-2xl font-bold flex justify-center mt-44">
             ທຳມະຊາດ ແລະ ທິວທັດແຂວງຫລວງພະບາງ
           </h1>
         </div>
       </div>
-      <div className="bg-emerald-400 p-4 grid grid-cols-4 gap-4">
+      <div className="bg-emerald-400 p-4 grid md:grid-cols-4 gap-4">
         <div>
           <img
             className="h-80 w-full object-cover rounded-md"

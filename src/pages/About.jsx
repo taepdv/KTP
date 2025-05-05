@@ -2,8 +2,8 @@ function About() {
   return (
     <div>
       <div className="h-screen w-full bg-[url('https://luangprabangmai.wordpress.com/wp-content/uploads/2019/06/maxresdefault1.jpg')]">
-        <span className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
-          <div className="text-2xl">
+        <span className="hidden md:flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
+          <div className="">
             <i className="fa-solid fa-phone-volume p-3"></i>
             LAO +856 20 91123850
             <i className="fa-regular fa-envelope p-4"></i>
@@ -17,12 +17,24 @@ function About() {
           </div>
         </span>
         <div>
+          <span className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-white">
+            <div className="md:hidden">
+              <i className="fa-solid fa-phone-volume p-4"></i>
+              LAO +856 20 91123850
+              <i className="fa-brands fa-facebook p-4"></i>
+              <i className="fa-brands fa-linkedin p-4"></i>
+              <i className="fa-brands fa-google p-4"></i>
+              <i className="fa-brands fa-youtube p-4"></i>
+            </div>
+          </span>
+        </div>
+        <div>
           <h1 className="text-5xl font-bold flex justify-center mt-44">
             ແຂວງຫລວງພະບາງ
           </h1>
         </div>
       </div>
-      <div className="bg-emerald-400 p-4 grid grid-cols-4 gap-4">
+      <div className="bg-emerald-400 p-4 grid md:grid-cols-4 gap-4">
         <div>
           <img
             className="h-80 w-full object-cover rounded-md"
@@ -105,7 +117,7 @@ function About() {
         </div>
       </div>
       <div className="p-4 w-screen bg-emerald-400">
-      <p className="text-justify leading-relaxed">
+        <p className="text-justify leading-relaxed">
           ຫຼວງພະບາງ ເມືອງມໍລະດົກໂລກຂອງລາວ ປາຍທາງ ຂອງນັກທ່ອງທ່ຽວ ທີ່ມາທ່ຽວລາວ ແລະ
           ຫຼວງພະບາງ ເປັນເມືອງເອກຂອງ ແຂວງຫຼວງພະບາງ ປະເທດລາວ
           ຕັ້ງຢູ່ທາງພາກເໜືອຂອງປະເທດ, ຕົວເມືອງຕັ້ງຢູ່ແຄມຝັ່ງແມ່ນໍ້າຂອງ ແລະ
@@ -141,7 +153,7 @@ function About() {
           ທາງດ້ານປະຫວັດສາດທີ່ມີສື່ສຽງທີ່ສຸດ. ນອກນັ້ນ ໃນຕອນເຊົ້າຂອງແຕ່ລະມື້
           ຄູບາໄດ້ອອກມາບິນພະບາດຕາມຖະໜົນຂອງຫຼວງພະບາງ ເຊິ່ງເປັນ
           ພາບທີ່ຄຸ້ນຕາສຳລັບຫຼາຍຄົນ.
-          </p>
+        </p>
       </div>
     </div>
   );
