@@ -40,7 +40,6 @@ function Home() {
           <span className="text-5xl text-lime-500 flex mt-24">
             ຂໍເຊີນທຸກທ່ານມາທ່ຽວ ແຂວງ ຫລວງພະບາງ
           </span>
-          <span className="text-5xl text-lime-500 flex mt-24">ຂໍຂອບໃຈ</span>
         </div>
       </div>
       <div className="bg-emerald-400 p-8 grid grid-cols-5 gap-4">
